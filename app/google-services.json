@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1023051099086",
+    "project_id": "clevertap-pro-cfe98",
+    "storage_bucket": "clevertap-pro-cfe98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023051099086:android:5b6aeedd194b37171f999f",
+        "android_client_info": {
+          "package_name": "com.kosmasfn.cttest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023051099086-h7ps17qsiq72ftk3uoarh7k4u4oclfra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_6F1-q4VEUwY8y6DkAFNYwTYtXFHKV6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023051099086-h7ps17qsiq72ftk3uoarh7k4u4oclfra.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1023051099086-jljaas3ter8emaco6dnl5qds3i8ntvrm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kosmas.ctct"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -171,6 +171,7 @@ object CleverTapExt {
                 it.showAppInbox(this)
                 val firstMessageId = it.allInboxMessages?.firstOrNull()?.messageId
                 //Raise Notification Viewed event for Inbox Message. Message id should be a String
+                Log.i("inboxpayload", it.allInboxMessages.toString())
                 firstMessageId?.also { id ->
                     it.pushInboxNotificationViewedEvent(id)
                     println("Raised Notification Viewed event For Id = $id")
@@ -193,5 +194,14 @@ object CleverTapExt {
 
     fun onDisplayUnitClicked(context: Context, id: String) {
         CleverTapAPI.getDefaultInstance(context)?.pushDisplayUnitClickedEventForID(id)
+    }
+
+    fun nativeDisplaySimpleMessage(context: Context) {
+        CleverTapAPI.getDefaultInstance(context)?.pushEvent("nativeDisplaySimpleMessage")
+        CleverTapAPI.getDefaultInstance(context)?.pushEvent("nativeDisplayCarouselMessage")
+        CleverTapAPI.getDefaultInstance(context)?.pushEvent("nativeDisplayMessageWithIcon")
+        CleverTapAPI.getDefaultInstance(context)?.pushEvent("nativeDisplayCustomKeyValue")
+        CleverTapAPI.getDefaultInstance(context)?.pushEvent("nativeDisplaySimpleMessageWithIconOnly")
+        CleverTapAPI.getDefaultInstance(context)?.pushEvent("nativeDisplayCarouselMessageWithIconOnly")
     }
 }

@@ -47,7 +47,7 @@
             android:label="@string/title_activity_dashboard_screen"
             android:theme="@style/Theme.Cttest" />
         <activity
-            android:name=".view.compose.home.HomeActivity"
+            android:name=".view.compose.home.DashboardActivity"
             android:exported="false"
             android:theme="@style/Theme.Cttest" />
 

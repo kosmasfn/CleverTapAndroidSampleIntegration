@@ -2,12 +2,10 @@
 
 package com.kosmasfn.cttest.view
 
-import android.R
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ProgressBar
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.clickable
@@ -44,8 +42,8 @@ import com.bumptech.glide.integration.compose.GlideImage
 import com.clevertap.android.sdk.CleverTapAPI
 import com.clevertap.android.sdk.displayunits.DisplayUnitListener
 import com.clevertap.android.sdk.displayunits.model.CleverTapDisplayUnit
-import com.kosmasfn.cttest.view.ui.theme.CttestTheme
 import com.kosmasfn.cttest.core.util.CleverTapExt
+import com.kosmasfn.cttest.view.theme.CttestTheme
 
 class DisplayUnitActivity : ComponentActivity(), DisplayUnitListener {
 

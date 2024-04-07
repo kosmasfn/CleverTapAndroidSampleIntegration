@@ -1,10 +1,12 @@
 package com.kosmasfn.cttest.view.compose
 
 import android.R
+import android.content.Context
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -17,10 +19,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.kosmasfn.cttest.core.util.CleverTapExt
+import com.kosmasfn.cttest.view.DisplayUnitActivity
 import com.kosmasfn.cttest.view.theme.CttestTheme
 
 @Composable
-fun SearchScreen(navController: NavController) {
+fun SearchScreen(navController: NavController, context: Context) {
     CttestTheme {
         Surface(
             modifier = Modifier.fillMaxSize(),
@@ -29,17 +33,22 @@ fun SearchScreen(navController: NavController) {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(colorResource(id = R.color.transparent))
+                    .background(colorResource(id = android.R.color.transparent))
                     .wrapContentSize(Alignment.Center)
             ) {
                 Text(
-                    text = "Inbox Screen",
+                    text = "Home Screen",
                     fontWeight = FontWeight.Bold,
-                    color = Color.White,
+                    color = Color.Black,
                     modifier = Modifier.align(Alignment.CenterHorizontally),
                     textAlign = TextAlign.Center,
                     fontSize = 20.sp
                 )
+                Button(onClick = {
+
+                }) {
+                    Text(text = "sdnfnsdfghlhgdsjfgsdf")
+                }
             }
         }
     }

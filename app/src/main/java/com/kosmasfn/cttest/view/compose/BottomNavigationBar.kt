@@ -16,6 +16,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navDeepLink
 import com.clevertap.android.sdk.displayunits.DisplayUnitListener
 import com.kosmasfn.cttest.view.compose.home.DashboardActivity
 import com.kosmasfn.cttest.view.compose.home.HomeListener
@@ -70,7 +71,7 @@ fun BottomNavigationBar(context: Context) {
             composable(Screens.Search.route) {
                 CleverTapExt.onSearchPageSelected(context)
                 SearchScreen(
-                    navController
+                    navController, context
                 )
             }
             composable(Screens.Inbox.route) {
@@ -88,6 +89,14 @@ fun BottomNavigationBar(context: Context) {
                     navController, context
                 )
             }
+//            composable(
+//                Screens.Search.route,
+//                deepLinks = listOf(navDeepLink {
+//                    uriPattern = "https://kosmas.com/callback"
+//                }),
+//            ) { backStackEntry ->
+//                SpotifyActivity.launchIntent(context)
+//            }
         }
     }
 }

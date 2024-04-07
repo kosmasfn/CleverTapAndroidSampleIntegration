@@ -1,5 +1,11 @@
 [versions]
 agp = "8.3.0"
+clevertapAndroidSdk = "6.1.1"
+compose = "1.0.0-beta01"
+converterGson = "2.11.0"
+glide = "4.16.0"
+hiltAndroid = "2.48"
+hiltCompiler = "2.51"
 kotlin = "1.9.0"
 coreKtx = "1.12.0"
 junit = "4.13.2"
@@ -13,9 +19,23 @@ activityCompose = "1.8.2"
 composeBom = "2023.08.00"
 clevertapSDK = "v6.1.1"
 firebaseMessagingKtx = "23.4.1"
+material3 = "1.2.1"
+materialVersion = "1.4.0"
+navigationCompose = "2.7.7"
+recyclerview = "1.3.2"
+viewpager = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+androidx-viewpager = { module = "androidx.viewpager:viewpager", version.ref = "viewpager" }
+clevertap-android-sdk-v611 = { module = "com.clevertap.android:clevertap-android-sdk", version.ref = "clevertapAndroidSdk" }
+compose = { module = "com.github.bumptech.glide:compose", version.ref = "compose" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltCompiler" }
 jetbrains-kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutinesPlayServicesVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -34,6 +54,9 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 clevertap-android = { group = "com.clevertap.android", name = "clevertap-android-sdk", version.ref = "clevertapSDK" }
 firebase-messaging-ktx = { group = "com.google.firebase", name = "firebase-messaging-ktx", version.ref = "firebaseMessagingKtx" }
+material-v140 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

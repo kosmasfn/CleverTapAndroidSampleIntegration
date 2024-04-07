@@ -79,48 +79,37 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-
-    implementation(libs.material)
-
-    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
-
-    implementation(platform(libs.androidx.compose.bom))
-
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.viewpager)
+    implementation(libs.material.v140)
 
-    implementation("androidx.recyclerview:recyclerview:1.2.1")
-    implementation("androidx.viewpager:viewpager:1.0.0")
-    implementation("com.google.android.material:material:1.4.0")
+    implementation(libs.material)
 
-    implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
+    implementation(platform(libs.androidx.compose.bom))
 
-    implementation("com.clevertap.android:clevertap-android-sdk:6.1.1")
+    implementation(libs.glide)
+    implementation(libs.compose)
 
-    implementation("androidx.navigation:navigation-compose:2.7.5")
+    implementation(libs.clevertap.android.sdk.v611)
 
-    implementation("androidx.compose.material3:material3:1.2.0-alpha04")
-
-    implementation("com.google.dagger:hilt-android:2.48")
     implementation(libs.firebase.messaging.ktx)
-    ksp("com.google.dagger:hilt-compiler:2.48")
 
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-//    implementation("androidx.ui:ui-tooling:$compose_version")
-//    implementation("androidx.compose.runtime:runtime:$compose_version")
-//    implementation("androidx.compose.compiler:compiler:$compose_version")
+    implementation(libs.androidx.navigation.compose)
 
-    // Add the dependencies for any other desired Firebase products
-    // https://firebase.google.com/docs/android/setup#available-libraries
+    implementation(libs.material3)
 
-    //annotationProcessor()
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+
+    implementation(libs.converter.gson)
+    implementation(libs.retrofit)
 
     testImplementation(libs.junit)
 
@@ -131,41 +120,4 @@ dependencies {
 
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-//        val lifecycle_version = "2.7.0"
-//        val arch_version = "2.2.0"
-//
-//        // ViewModel
-//        implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
-//        // ViewModel utilities for Compose
-//        implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
-//        // LiveData
-//        implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
-//        // Lifecycles only (without ViewModel or LiveData)
-//        implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
-//        // Lifecycle utilities for Compose
-//        implementation("androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version")
-//
-//        // Saved state module for ViewModel
-//        implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version")
-//
-//        // Annotation processor
-//        kapt("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")
-//        // alternately - if using Java8, use the following instead of lifecycle-compiler
-//        implementation("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
-//
-//        // optional - helpers for implementing LifecycleOwner in a Service
-//        implementation("androidx.lifecycle:lifecycle-service:$lifecycle_version")
-//
-//        // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
-//        implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
-//
-//        // optional - ReactiveStreams support for LiveData
-//        implementation("androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version")
-//
-//        // optional - Test helpers for LiveData
-//        testImplementation("androidx.arch.core:core-testing:$arch_version")
-//
-//        // optional - Test helpers for Lifecycle runtime
-//        testImplementation ("androidx.lifecycle:lifecycle-runtime-testing:$lifecycle_version")
-
 }
